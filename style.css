@@ -22,7 +22,11 @@ h3{
 .logo{
   padding: 20px 0;
 }
-
+.strike{
+  text-decoration: line-through;
+  color:#aa0000aa;
+  font-size: 20px;
+}
 .title_color{
   color:#ff0;
 }
