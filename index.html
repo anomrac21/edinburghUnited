@@ -2,10 +2,10 @@
 	<head>
 		<meta content="width=device-width, initial-scale=1" name="viewport" />
 		<title>Edinburgh United Football Tournament</title>
-		<meta name="description" content="31st March. 6min/Half Small Goal. $5000+ in Prizes. Registration $800. Fete Match Vibes. Hosted by Camo" />
+		<meta name="description" content="POSTPONED TO AUGUST 31ST. Registration $800. $5000+ in Prizes. 6min/Half Small Goal. Fete Match Vibes. Hosted by Camo" />
 		<meta property="og:title" content="Edinburgh United 4v4 Football Tournament" />
 		<meta property="og:url" content="https://euft.netlify.app/" />
-		<meta property="og:description" content="31st March. 6min/Half Small Goal. $5000+ in Prizes. Registration $800. Fete Match Vibes. Hosted by Camo" />
+		<meta property="og:description" content="POSTPONED TO AUGUST 31ST. Registration $800. $5000+ in Prizes. 6min/Half Small Goal. Fete Match Vibes. Hosted by Camo" />
 		<meta property="og:image" content="/images/1.png" />
 		<link rel="stylesheet" href="style.css">
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -26,16 +26,21 @@
 			<img class="logo center" src="images/ball.png" alt="ball" width="100" height="100">
 			<h1 class="black-ops center title_color">EDINBURGH UNITED<br>4v4 FOOTBALL<br>TOURNAMENT</h1>
 			<br>
-			<h3 class="center">6MIN/HALF<br>SMALL GOAL<br>$5000+ in Prizes</h2>
+			<h3 class="black-ops center title_color">EVENT STATUS : POSTPONED</h3>
+			<h3 class="black-ops center title_color"><b class="strike">MARCH 31ST, 2024</b></h3>
+			<h3 class="black-ops center title_color">TENTATIVE DATE: AUGUST 31ST, 2024</h3>
+			<h1 id="demo" class="black-ops center title_color"></h1>
 			<br>
 			<img class="center vs" src="images/vs.png" alt="ball" >
+			<br>
+			<h3 class="center">6MIN/HALF<br>SMALL GOAL<br>$5000+ in Prizes</h2>
+			<br>
 			<h3 class="black-ops center title_color">2 TEAMS CONFIRMED</h3>	
 			<h3 class="black-ops center title_color">ADDTIONAL REQUIRED</h3>	
 			<br>
 			<img class="center live" src="images/live.png" alt="ball" >	
 			<br>
-			<h3 class="black-ops center title_color">STATUS : PENDING</h3>	
-			<h3 class="black-ops center title_color">SUNDAY, 31 MARCH. 10:00AM</h3>
+			
 			<h3 class="black-ops center title_color" style="padding: 0 0 20px;">CONTRIBUTION: <b class="strike">$1000</b> <b>$800</b></h3>
 			<br>
 		</div>
@@ -66,18 +71,14 @@
 			<h3 class="black-ops center title_color">FOOTBALL TOURNAMENT PRIZES</h3>
 			<br>
 			<h3 class="center">FIRST PRIZE</h3>
-			<p class="center">$2000 + A CASE OF BEERS</p>
+			<p class="center">$2000</p>
 			<br>
 			<h3 class="center">SECOND PRIZE</h3>
-			<p class="center">$1200 + A CASE OF BEERS</p>
+			<p class="center">$1200</p>
 			<br>
 			<h3 class="center">THIRD PRIZE</h3>
-			<p class="center">$800 + A CASE OF BEERS</p>
+			<p class="center">$800</p>
 			<br>
-			<h3 class="center">FOURTH PRIZE</h3>
-			<p class="center">A CASE OF BEERS</p>
-			<br>
-			
 		</div>
 
 
@@ -245,6 +246,35 @@
 		</div>
 		<script defer src="https://widget.tochat.be/bundle.js?key=6049c9b7-4d28-4b7e-b9bc-592d63583731"></script>
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+		<script>
+    		// Set the date we're counting down to
+    		var countDownDate = new Date("Aug 31, 2024 10:00:00").getTime();
+
+    		// Update the count down every 1 second
+    		var x = setInterval(function() {
+        	// Get today's date and time
+        	var now = new Date().getTime();
+
+        	// Find the distance between now and the count down date
+        	var distance = countDownDate - now;
+
+        	// Time calculations for days, hours, minutes, and seconds
+        	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        	// Display the result in the element with id="demo"
+        	document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+        	// If the count down is finished, write some text
+        	if (distance < 0) {
+            	clearInterval(x);
+            	document.getElementById("demo").innerHTML = "EXPIRED";
+        	}
+    		}, 1000);
+		</script>
 		<script type="text/javascript">
 			AOS.init();
 		</script>
