@@ -20,11 +20,12 @@ h3{
   font-size: 1.2em;
 }
 #demo{
-  padding-top: 10px;
-  min-height: 36px;
-  background-color:#000000aa ;
-  text-align: center;
-  vertical-align: middle;
+    padding: 10px 25px 5px;
+    min-height: 36px;
+    background-color: #000000aa;
+    text-align: center;
+    vertical-align: middle;
+    width: fit-content;
 
 }
 .logo{
